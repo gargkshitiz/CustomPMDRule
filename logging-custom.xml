@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
-<ruleset name="CEB Java Custom Logging" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+<ruleset name="Java Custom Logging" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
 
 	<description>
-		Custom CEB Java Logging ruleset contains a collection of rules that find questionable usages of the logger.
+		Custom Java Logging ruleset contains a collection of rules that find questionable usages of the logger.
   	</description>
 
-	<rule name="CebRuleConcatenationInLogStatement" language="java" since="Webcq 3.7.2"
+	<rule name="CustomRuleConcatenationInLogStatement" language="java" since="Webcq 3.7.2"
 		message="Concatenation is not allowed in a log statement because of performance reasons. Use SLF4J method argument format instead and use multiple log statements if there are too many things to be logged" class="com.kshitiz.webcq.pmd.PerformantLoggingRule"
 		externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/logging-java.html#GuardLogStatementJavaUtil">
 		<description>
